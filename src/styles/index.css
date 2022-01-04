@@ -99,6 +99,13 @@
   color: white;
 }
 
+.liste-vignette {
+  background-color: #F6F6F6;
+  border-radius: 25px;
+  padding: 56px 50px;
+  margin-top: 43px;
+}
+
 /* responsive */
 
 @media screen and (max-width: 600px) {
