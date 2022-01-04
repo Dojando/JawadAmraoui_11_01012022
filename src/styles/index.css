@@ -5,7 +5,6 @@
 }
 
 #root {
-  max-width: 1440px;
   width: 100%;
   min-height: calc(100vh - 210px);
   padding-bottom: 210px;
@@ -65,22 +64,39 @@
   margin-bottom: 30px;
 }
 
+/* toutes les pages */
+
+.page {
+  max-width: 1280px;
+  width: 100%;
+}
+
+.page-container {
+  margin: 0 20px;
+}
+
 /* Page home */
 
 .page-home {
-  width: 100%;
   margin-top: 60px;
 }
 
 .banner-home {
-  width: 100%;
   height: 223px;
+  padding-left: 16px;
   border-radius: 25px;
-  background-image: url("../images/BannerHome.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url("../images/BannerHome.png");
+  background-position: right 0;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .banner-home h1 {
   font-size: 3em;
+  font-weight: normal;
+  color: white;
 }
 
 /* responsive */
@@ -109,4 +125,13 @@
   .page-home {
     margin-top: 16px;
    }
+
+   .banner-home {
+    height: 111px;
+    border-radius: 10px;
+  }
+
+  .banner-home h1 {
+    font-size: 1.5em;
+  }
 }

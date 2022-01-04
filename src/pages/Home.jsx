@@ -4,8 +4,10 @@ import BannerHome from "../components/BannerHome"
 class Home extends React.Component {
   render() {
     return (
-      <main className="page-home">
-        <BannerHome/>
+      <main className="page page-home">
+        <div className="page-container">
+          <BannerHome/> 
+        </div>
       </main>
     );
   }
