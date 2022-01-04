@@ -1,11 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { BrowserRouter as Router } from 'react-router-dom'
+import "./styles/index.css"
 import Home from './pages/Home';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Home />
+    <Router>
+      <Header />
+      <Home />
+      <Footer/>      
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
