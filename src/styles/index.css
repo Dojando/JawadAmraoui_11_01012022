@@ -145,6 +145,22 @@
   
 }
 
+/* page a propos */
+
+.banner-apropos {
+  height: 223px;
+  border-radius: 25px;
+  margin: 45px 0 30px 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.2)) , url("../images/BannerApropos.png");
+  background-position: right 0;
+  background-size: cover;
+}
+
+.dropdown {
+  max-width: 1023px;
+  min-height: 47px;
+}
+
 /* page erreur */
 
 .page-erreur-container {
@@ -202,6 +218,13 @@
 
   .banner-home h1 {
     font-size: 1.5em;
+  }
+
+  /* page a propos */
+
+  .banner-apropos {
+    border-radius: 10px;
+    margin: 17px 0 19px 0;
   }
 
   /* page erreur */

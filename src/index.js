@@ -6,6 +6,7 @@ import "./styles/index.css"
 import Home from './pages/Home';
 import FicheLogement from './pages/FicheLogement';
 import Erreur from './pages/PageErreur';
+import Apropos from './pages/Apropos.jsx';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
@@ -13,7 +14,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Header />
-      <Erreur />
+      <Apropos />
       <Footer/>      
     </Router>
   </React.StrictMode>,
