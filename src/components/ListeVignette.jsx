@@ -9,6 +9,8 @@ class ListeVignette extends React.Component {
         <Vignette/>
         <Vignette/>
         <Vignette/>
+        <Vignette/>
+        <Vignette/>
       </div>
     );
   }

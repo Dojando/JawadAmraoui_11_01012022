@@ -145,6 +145,29 @@
   
 }
 
+/* page erreur */
+
+.page-erreur-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #FF6060;
+  margin-bottom: 20px;
+}
+
+.page-erreur-container h1 {
+  font-size: 18em;
+  font-weight: 700;
+  margin: 100px 0 30px 0;
+}
+
+.message-erreur {
+  font-size: 2.25em;
+  font-weight: 500;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
 /* responsive */
 
 @media screen and (max-width: 600px) {
@@ -180,6 +203,20 @@
   .banner-home h1 {
     font-size: 1.5em;
   }
+
+  /* page erreur */
+
+  .page-erreur-container h1 {
+    font-size: 6em;
+    font-weight: 700;
+    margin: 150px 0 30px 0;
+  }
+  
+  .message-erreur {
+    font-size: 1.12em;
+    margin-bottom: 100px;
+  }
+
 }
 
 @media screen and (max-width: 845px) {
