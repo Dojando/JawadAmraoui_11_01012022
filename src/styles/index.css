@@ -388,8 +388,73 @@
 
 }
 
-@media screen and (max-width: 845px) {
+@media screen and (max-width: 700px) {
+  /* page fiche logement */
 
+  .logement-infos {
+    flex-direction: column;
+    margin: 15px 0 15px 0;
+  }
+  .logement-detail-container h1 {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 5px;
+    line-height: 25px;
+  }
+
+  .logement-location {
+    font-size: 1em;
+    font-weight: 600;
+  }
+
+  .user-detail-container {
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .user-profil {
+    margin-bottom: 0px;
+  }
+
+  .user-profil p {
+    width: 120px;
+    font-size: 0.9em;
+    line-height: 20px;
+  }
+
+  .user-photo {
+    width: 45px;
+    height: 45px;
+  }
+
+  .tag {
+    min-width: 84px;
+    height: 18px;
+    padding: 0 5px;
+    margin: 0 10px 10px 0;
+    border-radius: 5px;
+    background-color: #FF6060;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .tag p {
+    color: white;
+    font-size: 0.7em;
+    font-weight: 500;
+  }
+
+  .rating-logo {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+  }
+
+}
+
+@media screen and (max-width: 845px) {
   /* page home */
 
   .vignette {
