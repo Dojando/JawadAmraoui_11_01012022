@@ -206,7 +206,9 @@
   background-color: tomato;
 }
 
-.logement-detail-container {
+.logement-infos {
+  display: flex;
+  justify-content: space-between;
   margin: 30px 0 14px 0;
 }
 
@@ -244,6 +246,40 @@
   color: white;
   font-size: 0.87em;
   font-weight: 500;
+}
+
+.user-detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.user-profil {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.user-profil p {
+  width: 150px;
+  text-align: end;
+  color: #FF6060;
+  font-size: 1.125em;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+.user-photo {
+  margin-left: 10px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: grey;
+}
+
+.rating-logo {
+  margin-left: 10px;
 }
 
 /* page erreur */

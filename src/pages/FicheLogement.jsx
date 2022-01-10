@@ -1,6 +1,7 @@
 import React from "react"
 import Carrousel from "../components/CarrouselFiche";
 import Tag from "../components/Tag";
+import Rating from "../components/Rating";
 
 class FicheLogement extends React.Component {
   render() {
@@ -26,7 +27,11 @@ class FicheLogement extends React.Component {
                 </div>
               </div>
               <div className="logement-note">
-
+                <Rating color="#E3E3E3"/>
+                <Rating color="#E3E3E3"/>
+                <Rating color="#E3E3E3"/>
+                <Rating color="#E3E3E3"/>
+                <Rating color="#E3E3E3"/>
               </div>
             </div>
           </header>
