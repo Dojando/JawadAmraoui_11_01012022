@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router } from 'react-router-dom'
-import { Route, Switch } from "react-router";
+import { BrowserRouter as Router, Routes } from 'react-router-dom'
+import { Route } from "react-router";
 import "./styles/index.css"
 import Home from './pages/Home';
 import FicheLogement from './pages/FicheLogement';
@@ -14,7 +14,12 @@ ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Header />
-      <FicheLogement />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/logement/:id" element={<FicheLogement />} />
+        <Route path="/a-propos" element={<Apropos />} />
+        <Route path="*" element={<Erreur />} />
+      </Routes>
       <Footer/>      
     </Router>
   </React.StrictMode>,

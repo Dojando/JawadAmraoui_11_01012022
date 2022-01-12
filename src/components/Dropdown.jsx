@@ -21,11 +21,11 @@ class Dropdown extends React.Component {
     return (
       <div className={this.state.toggleDropdown ? "dropdown" : "dropdown hide-dropdown"}>
         <div onClick={this.handleDropdown} className="dropdown-header">
-          <p>{this.props.details.title}</p>
+          <p>{this.props.title}</p>
           <img src={this.state.toggleDropdown ? LogoDropdownClosed : LogoDropdownOpen} alt="logo d'état du dropdown" />
         </div>
         <div className="dropdown-body">
-          <p>{this.props.details.content}</p>
+          <p>{this.props.content}</p>
         </div>       
       </div>
     );

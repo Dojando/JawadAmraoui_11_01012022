@@ -2,6 +2,7 @@ import React from "react"
 import Carrousel from "../components/CarrouselFiche";
 import Tag from "../components/Tag";
 import Rating from "../components/Rating";
+import Dropdown from "../components/Dropdown";
 
 class FicheLogement extends React.Component {
   render() {
@@ -37,10 +38,10 @@ class FicheLogement extends React.Component {
           </header>
           <section className="logement-dropdown-container">
             <div className="logement-description-container">
-
+              <Dropdown title="Test" content="test test"/>
             </div>
             <div className="logement-equipement-container">
-
+              <Dropdown title="Test" content="test test"/>
             </div>
           </section>
         </div>
