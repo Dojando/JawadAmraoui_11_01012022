@@ -5,7 +5,12 @@ import Rating from "../components/Rating";
 import Dropdown from "../components/Dropdown";
 
 class FicheLogement extends React.Component {
-  render() {
+  
+  componentDidMount() {
+    console.log(window.location.pathname.split("/")[2]);
+  }
+
+  render() { 
     return (
       <main className="page page-logement">
         <div className="page-container">

@@ -45,6 +45,15 @@
   margin-left: 50px;
 }
 
+.header-links a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header-links a:focus {
+  border-bottom: #FF6060 1px solid;
+}
+
 /* footer */
 
 .footer-main {
@@ -113,6 +122,13 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  overflow: hidden;
+}
+
+.vignette img {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
 }
 
 .vignette::after {
@@ -126,6 +142,7 @@
 }
 
 .vignette h2 {
+  position: absolute;
   width: 40%;
   font-size: 1.12em;
   font-weight: normal;
