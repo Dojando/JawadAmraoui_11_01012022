@@ -5,48 +5,75 @@ import Rating from "../components/Rating";
 import Dropdown from "../components/Dropdown";
 
 class FicheLogement extends React.Component {
+
+  state = {
+    data: require('../data.json'),
+    logementData: {},
+    equipments: [],
+    host: {},
+    pictures: [],
+    tags: []
+  }
   
   componentDidMount() {
-    console.log(window.location.pathname.split("/")[2]);
+    const logementData = this.state.data.find(el => el.id === window.location.pathname.split("/")[2])
+    const equipments = logementData.equipments;
+    const host = logementData.host;
+    const pictures = logementData.pictures;
+    const tags = logementData.tags;
+    this.setState({ logementData: logementData, equipments: equipments, host: host, pictures: pictures, tags: tags })
   }
 
   render() { 
+    console.log(this.state.logementData.rating);
+    const notes = [];
+    let x = 0;
+    let y = 0;
+    while (y < this.state.logementData.rating) {
+      notes.push(<Rating key={x} color="#FF6060"/>)
+      y++;
+      x++;
+    }
+    if (x < 5) {
+      while (x < 5) {
+        notes.push(<Rating key={x} color="#E3E3E3"/>)
+        x++;
+      }      
+    }
+
+
     return (
       <main className="page page-logement">
         <div className="page-container">
           <Carrousel />
           <header className="logement-infos">
             <div className="logement-detail-container">
-              <h1>Cozy loft on the Canal Saint-Martin</h1>
-              <p className="logement-location">Paris, Ile de france</p>
+              <h1>{this.state.logementData.title}</h1>
+              <p className="logement-location">{this.state.logementData.location}</p>
               <div className="tagslist">
-                <Tag tagName="City" />
-                <Tag tagName="Paris" />
-                <Tag tagName="Test test" />
+                {this.state.tags.map(function(el, index) {
+                  return <Tag tagName={el} key={index}/>
+                })}
               </div>
             </div>
             <div className="user-detail-container">
               <div className="user-profil">
-                <p>Alexandre Dumas</p>
+                <p>{this.state.host.name}</p>
                 <div className="user-photo">
-                  
+                  <img src={this.state.host.picture} alt="hôte du logement" />
                 </div>
               </div>
               <div className="logement-note">
-                <Rating color="#E3E3E3"/>
-                <Rating color="#E3E3E3"/>
-                <Rating color="#E3E3E3"/>
-                <Rating color="#E3E3E3"/>
-                <Rating color="#E3E3E3"/>
+                { notes }
               </div>
             </div>
           </header>
           <section className="logement-dropdown-container">
             <div className="logement-description-container">
-              <Dropdown title="Test" content="test test"/>
+              <Dropdown title="Description" content={this.state.logementData.description}/>
             </div>
             <div className="logement-equipement-container">
-              <Dropdown title="Test" content="test test"/>
+              <Dropdown title="Équipements" content={this.state.equipments}/>
             </div>
           </section>
         </div>

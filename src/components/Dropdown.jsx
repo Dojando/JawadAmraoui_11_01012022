@@ -18,6 +18,18 @@ class Dropdown extends React.Component {
   }
 
   render() {
+    let isObject = false;
+    const equipement = [];
+    if (typeof(this.props.content) === 'object') {
+      isObject = true;
+      for (let i in this.props.content) {
+        equipement.push(this.props.content[i])
+      }
+    }
+    let listObject = <ul>{equipement.map(function(el, index) {
+      return (<li key={index}>{el}</li>)
+    })}</ul>;
+
     return (
       <div className={this.state.toggleDropdown ? "dropdown" : "dropdown hide-dropdown"}>
         <div onClick={this.handleDropdown} className="dropdown-header">
@@ -25,7 +37,7 @@ class Dropdown extends React.Component {
           <img src={this.state.toggleDropdown ? LogoDropdownClosed : LogoDropdownOpen} alt="logo d'état du dropdown" />
         </div>
         <div className="dropdown-body">
-          <p>{this.props.content}</p>
+          { isObject ? listObject : <p>{this.props.content}</p> }
         </div>       
       </div>
     );
