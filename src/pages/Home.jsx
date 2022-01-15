@@ -9,7 +9,6 @@ class Home extends React.Component {
 
   componentDidMount() {
     console.log(this.state.data)
-    console.log(this.state.data)
   }
 
   render() {
@@ -19,7 +18,6 @@ class Home extends React.Component {
           <BannerHome/>
           <div className="liste-vignette">
             {this.state.data.map(function(el) {
-              console.log(el.id)
               return <Vignette cover={el.cover} titre={el.title} id={el.id} key={el.id}/>
             })}
           </div>

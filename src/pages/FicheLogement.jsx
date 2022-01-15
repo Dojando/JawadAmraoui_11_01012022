@@ -12,7 +12,7 @@ class FicheLogement extends React.Component {
     equipments: [],
     host: {},
     pictures: [],
-    tags: []
+    tags: [],
   }
   
   componentDidMount() {
@@ -24,8 +24,7 @@ class FicheLogement extends React.Component {
     this.setState({ logementData: logementData, equipments: equipments, host: host, pictures: pictures, tags: tags })
   }
 
-  render() { 
-    console.log(this.state.logementData.rating);
+  calculNote = () => {
     const notes = [];
     let x = 0;
     let y = 0;
@@ -40,12 +39,16 @@ class FicheLogement extends React.Component {
         x++;
       }      
     }
+    return notes;
+  }
 
+  render() { 
+    console.log(this.state.logementData.rating);
 
     return (
       <main className="page page-logement">
         <div className="page-container">
-          <Carrousel />
+          { this.state.pictures ? <Carrousel photos={this.state.pictures}/> : null }
           <header className="logement-infos">
             <div className="logement-detail-container">
               <h1>{this.state.logementData.title}</h1>
@@ -64,7 +67,7 @@ class FicheLogement extends React.Component {
                 </div>
               </div>
               <div className="logement-note">
-                { notes }
+                { this.state.logementData.rating ? this.calculNote() : null }
               </div>
             </div>
           </header>
