@@ -34,7 +34,7 @@ class Dropdown extends React.Component {
       <div className={this.state.toggleDropdown ? "dropdown" : "dropdown hide-dropdown"}>
         <div onClick={this.handleDropdown} className="dropdown-header">
           <p>{this.props.title}</p>
-          <img src={this.state.toggleDropdown ? LogoDropdownClosed : LogoDropdownOpen} alt="logo d'état du dropdown" />
+          <img src={this.state.toggleDropdown ? LogoDropdownOpen : LogoDropdownClosed} alt="logo d'état du dropdown" />
         </div>
         <div className="dropdown-body">
           { isObject ? listObject : <p>{this.props.content}</p> }

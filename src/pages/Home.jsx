@@ -7,10 +7,6 @@ class Home extends React.Component {
     data: require('../data.json')
   }
 
-  componentDidMount() {
-    console.log(this.state.data)
-  }
-
   render() {
     return (
       <main className="page page-home">

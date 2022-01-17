@@ -162,6 +162,11 @@
   
 }
 
+.liste-vignette a {
+  max-width: 340px;
+  width: 100%;
+}
+
 /* page a propos */
 
 .banner-apropos {
@@ -378,6 +383,11 @@
   font-weight: 500;
   margin-bottom: 100px;
   text-align: center;
+}
+
+.page-erreur-lien-home a {
+  color: inherit;
+  text-decoration: none;
 }
 
 /* responsive */

@@ -17,6 +17,9 @@ class FicheLogement extends React.Component {
   
   componentDidMount() {
     const logementData = this.state.data.find(el => el.id === window.location.pathname.split("/")[2])
+    if (logementData === undefined) {
+      window.location = "http://localhost:3000/erreur";
+    }
     const equipments = logementData.equipments;
     const host = logementData.host;
     const pictures = logementData.pictures;
@@ -43,8 +46,6 @@ class FicheLogement extends React.Component {
   }
 
   render() { 
-    console.log(this.state.logementData.rating);
-
     return (
       <main className="page page-logement">
         <div className="page-container">

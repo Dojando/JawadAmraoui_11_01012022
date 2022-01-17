@@ -19,7 +19,6 @@ class Apropos extends React.Component {
         <div className="page-container page-apropos-container">
           <BannerApropos />
           {this.state.dropdownDetails.map(function(el) {
-            console.log(typeof(el.content));
             return <Dropdown title={el.title} content={el.content} key={el.id}/>
           })}
         </div>
