@@ -18,6 +18,7 @@ class Dropdown extends React.Component {
   }
 
   render() {
+    // Si la props content est un tableau d'éléments, affiché le texte sous forme de liste
     let isObject = false;
     const equipement = [];
     if (typeof(this.props.content) === 'object') {

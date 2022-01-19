@@ -16,8 +16,10 @@ class FicheLogement extends React.Component {
   }
   
   componentDidMount() {
+    // recupération des données et stockage dans le state. 
     const logementData = this.state.data.find(el => el.id === window.location.pathname.split("/")[2])
     if (logementData === undefined) {
+      // si aucune donnée, affichage de la page d'erreur
       window.location = "http://localhost:3000/erreur";
     }
     const equipments = logementData.equipments;
