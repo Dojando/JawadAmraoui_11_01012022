@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Dojando/JawadAmraoui_11_01012022/static/css/main.0bb9b206.css",
+    "main.js": "/Dojando/JawadAmraoui_11_01012022/static/js/main.decb19d6.js",
+    "static/media/BannerApropos.png": "/Dojando/JawadAmraoui_11_01012022/static/media/BannerApropos.fce6fc3e9ed27433e9b0.png",
+    "static/media/BannerHome.png": "/Dojando/JawadAmraoui_11_01012022/static/media/BannerHome.efc1935eb81fc5e585f9.png",
+    "index.html": "/Dojando/JawadAmraoui_11_01012022/index.html",
+    "main.0bb9b206.css.map": "/Dojando/JawadAmraoui_11_01012022/static/css/main.0bb9b206.css.map",
+    "main.decb19d6.js.map": "/Dojando/JawadAmraoui_11_01012022/static/js/main.decb19d6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0bb9b206.css",
+    "static/js/main.decb19d6.js"
+  ]
+}
