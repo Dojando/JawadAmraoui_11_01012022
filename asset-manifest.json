@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/JawadAmraoui_11_01012022/static/css/main.fe9d50b2.css",
-    "main.js": "/JawadAmraoui_11_01012022/static/js/main.decb19d6.js",
+    "main.js": "/JawadAmraoui_11_01012022/static/js/main.03d748cc.js",
     "static/media/BannerApropos.png": "/JawadAmraoui_11_01012022/static/media/BannerApropos.fce6fc3e9ed27433e9b0.png",
     "static/media/BannerHome.png": "/JawadAmraoui_11_01012022/static/media/BannerHome.efc1935eb81fc5e585f9.png",
     "index.html": "/JawadAmraoui_11_01012022/index.html",
     "main.fe9d50b2.css.map": "/JawadAmraoui_11_01012022/static/css/main.fe9d50b2.css.map",
-    "main.decb19d6.js.map": "/JawadAmraoui_11_01012022/static/js/main.decb19d6.js.map"
+    "main.03d748cc.js.map": "/JawadAmraoui_11_01012022/static/js/main.03d748cc.js.map"
   },
   "entrypoints": [
     "static/css/main.fe9d50b2.css",
-    "static/js/main.decb19d6.js"
+    "static/js/main.03d748cc.js"
   ]
 }
